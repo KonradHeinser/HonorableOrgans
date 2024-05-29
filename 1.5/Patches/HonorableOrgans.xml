@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/TraderKindDef[defName="Empire_Caravan_TributeCollector"]/stockGenerators</xpath>
+        <value>
+            <li Class="StockGenerator_Category">
+                <categoryDef>BodyPartsNatural</categoryDef>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Heart"]/statBases</xpath>
+        <value>
+            <RoyalFavorValue>1.802</RoyalFavorValue>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Lung"]/statBases</xpath>
+        <value>
+            <RoyalFavorValue>1.502</RoyalFavorValue>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Kidney"]/statBases</xpath>
+        <value>
+            <RoyalFavorValue>1.351</RoyalFavorValue>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Liver"]/statBases</xpath>
+        <value>
+            <RoyalFavorValue>1.802</RoyalFavorValue>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd" MayRequire="vat.epoeforked">
+                <xpath>/Defs/ThingDef[defName="Eye"]/statBases</xpath>
+                <value>
+                    <RoyalFavorValue>0.601</RoyalFavorValue>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd" MayRequire="vat.epoeforked">
+                <xpath>/Defs/ThingDef[defName="Nose"]/statBases</xpath>
+                <value>
+                    <RoyalFavorValue>0.150</RoyalFavorValue>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd" MayRequire="vat.epoeforked">
+                <xpath>/Defs/ThingDef[defName="Ear"]/statBases</xpath>
+                <value>
+                    <RoyalFavorValue>0.375</RoyalFavorValue>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd" MayRequire="vat.epoeforked">
+                <xpath>/Defs/ThingDef[defName="Jaw"]/statBases</xpath>
+                <value>
+                    <RoyalFavorValue>0.375</RoyalFavorValue>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd" MayRequire="vat.epoeforked">
+                <xpath>/Defs/ThingDef[defName="Stomach"]/statBases</xpath>
+                <value>
+                    <RoyalFavorValue>0.751</RoyalFavorValue>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd" MayRequire="vat.epoeforked">
+                <xpath>/Defs/ThingDef[defName="Arm"]/statBases</xpath>
+                <value>
+                    <RoyalFavorValue>1.126</RoyalFavorValue>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd" MayRequire="vat.epoeforked">
+                <xpath>/Defs/ThingDef[defName="Leg"]/statBases</xpath>
+                <value>
+                    <RoyalFavorValue>1.126</RoyalFavorValue>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
